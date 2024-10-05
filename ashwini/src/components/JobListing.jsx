@@ -1,11 +1,31 @@
-import jobImage from '../assets/oli.jpg'; // Replace with the correct image path
-import "./JobListing.css"
+import jobImage from "../assets/oli.png"; // Replace with the correct image path
+import "./JobListing.css";
 const jobs = [
-  { title: 'Development Associate', location: 'Washington, DC', deadline: '11/3/2024' },
-  { title: 'Manager - Real Estate Development', location: 'Washington, DC', deadline: '11/3/2024' },
-  { title: 'Senior Field Administrator', location: 'Phoenix', deadline: '11/3/2024' },
-  { title: 'Accounts Payable Administrator', location: 'Queens', deadline: '11/2/2024' },
-  { title: 'Scheduler - New Grad', location: 'Blue Bell', deadline: '11/1/2024' }
+  {
+    title: "Development Associate",
+    location: "Washington, DC",
+    deadline: "11/3/2024",
+  },
+  {
+    title: "Manager - Real Estate Development",
+    location: "Washington, DC",
+    deadline: "11/3/2024",
+  },
+  {
+    title: "Senior Field Administrator",
+    location: "Phoenix",
+    deadline: "11/3/2024",
+  },
+  {
+    title: "Accounts Payable Administrator",
+    location: "Queens",
+    deadline: "11/2/2024",
+  },
+  {
+    title: "Scheduler - New Grad",
+    location: "Blue Bell",
+    deadline: "11/1/2024",
+  },
 ];
 
 const JobListing = () => {
@@ -17,8 +37,10 @@ const JobListing = () => {
         <div className="job-description">
           <h3>Careers at Skanska</h3>
           <p>
-            Our employees are what make Skanska strong. We are one of the largest construction and development companies in the world, 
-            and we want to improve society and the future through our efforts and expertise. Do you want to join our team and be part of that vision?
+            Our employees are what make Skanska strong. We are one of the
+            largest construction and development companies in the world, and we
+            want to improve society and the future through our efforts and
+            expertise. Do you want to join our team and be part of that vision?
           </p>
         </div>
       </div>
