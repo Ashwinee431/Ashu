@@ -13,7 +13,7 @@ const Header = () => {
     <header className="header-container">
       <nav className="header-nav">
         <div className="logo">
-          <h1>Skanska</h1>
+          <h1>Shikhar</h1>
         </div>
         <ul className="header-menu">
           <li
