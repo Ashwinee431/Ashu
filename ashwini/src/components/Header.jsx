@@ -1,12 +1,17 @@
 import { useState } from 'react';
 import './Header.css'; 
-import { FaChevronDown, FaChevronUp, FaSearch } from 'react-icons/fa';
+import { FaChevronDown, FaChevronUp, FaSearch, FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleDropdown = (name) => {
     setOpenDropdown(openDropdown === name ? null : name);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -15,7 +20,13 @@ const Header = () => {
         <div className="logo">
           <h1>Shikhar</h1>
         </div>
-        <ul className="header-menu">
+        
+        {/* Burger icon for mobile */}
+        <div className="burger-icon" onClick={toggleMenu}>
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+        
+        <ul className={`header-menu ${isMenuOpen ? 'open' : ''}`}>
           <li
             className="header-item"
             onMouseEnter={() => toggleDropdown('deliver')}
@@ -117,6 +128,7 @@ const Header = () => {
             )}
           </li>
         </ul>
+        
         <div className="header-right">
           <a 
             href="https://67015976823fa20008f5fdd4--jolly-genie-38abea.netlify.app" 

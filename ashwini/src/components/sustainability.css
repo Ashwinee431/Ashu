@@ -1,78 +1,162 @@
 /* Sustainability Section */
 .sustainability-section {
-    max-width: 1200px;
-    margin: 3rem auto;
-    padding: 0 2rem;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left Column (Main Image and Sustainability Text) */
+.left-column {
+  width: 65%;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1rem;
+}
+
+.description h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Right Column (Side Image and Diversity Text) */
+.right-column {
+  width: 30%;
+}
+
+.side-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.inclusion-description h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.inclusion-description p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.inclusion-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.inclusion-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
   .content-wrapper {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* Left Column (Main Image and Sustainability Text) */
-  .left-column {
-    width: 65%;
-  }
-  
-  .main-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-  }
-  
-  .description {
-    font-size: 1rem;
-  }
-  
-  .description h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .description p {
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  /* Right Column (Side Image and Diversity Text) */
+
+  .left-column,
   .right-column {
-    width: 30%;
-  }
-  
-  .side-image {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
   }
-  
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .description h3,
   .inclusion-description h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  .main-image,
+  .side-image {
     margin-bottom: 1rem;
   }
-  
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .sustainability-section {
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .description p,
   .inclusion-description p {
-    color: #555;
-    line-height: 1.6;
+    font-size: 0.9rem;
   }
-  
+
+  .description h3,
+  .inclusion-description h3 {
+    font-size: 1.2rem;
+  }
+
+  .main-image,
+  .side-image {
+    margin-bottom: 1rem;
+  }
+}
+
+/* For smaller mobile screens */
+@media (max-width: 480px) {
+  .sustainability-section {
+    padding: 0 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .description h3,
+  .inclusion-description h3 {
+    font-size: 1.1rem;
+  }
+
+  .description p,
+  .inclusion-description p {
+    font-size: 0.85rem;
+  }
+
+  .main-image,
+  .side-image {
+    margin-bottom: 1rem;
+  }
+
   .inclusion-link {
-    color: #007bff;
-    text-decoration: none;
+    font-size: 0.9rem;
   }
-  
-  .inclusion-link:hover {
-    text-decoration: underline;
-  }
-  
+}
